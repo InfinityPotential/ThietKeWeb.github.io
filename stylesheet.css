@@ -1,0 +1,38 @@
+body{
+    font-family: 'Times New Roman', serif;
+    background-image: url(background/Infinity.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-attachment: fixed;
+  }
+  h1{
+    text-align: center;
+    color: green;
+    font-style: italic;
+  }
+  h2{
+    text-align: center;
+    color: blue;
+    font-weight: bold;
+  }
+  h3{
+    color: indigo;
+    font-style: italic;
+  }
+  a:link{
+    color: purple;
+  }
+  a:focus{
+    color: red;
+  }
+  a:active{
+    color: orange;
+  }
+  a:visited{
+    color: yellow;
+  }
+  #copyright{
+    text-align: center;
+    color: cyan;
+  }

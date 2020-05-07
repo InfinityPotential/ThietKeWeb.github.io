@@ -67,14 +67,20 @@ a:active {
 
 /* styles for navigation */
 #nav {
-	background-color: #751c54;
+  background-color: #751c54;
+  overflow: hidden;
+  width: 100%;
 }
 #nav ul {
 	list-style:none;
+  padding: 0;
+  margin: 0 auto;
+  width: 19.5em;
 } 
 #nav ul li {
 	font-weight: normal;
     text-transform: uppercase;
+    float: left;
 }
 #nav ul a:link {
     color: #fff;
@@ -83,13 +89,22 @@ a:active {
     color: #fff;
   }
 #nav ul a:focus {
-	color:#FC6
+  color:#FC6;
+  border-color: #fff;
 }
 #nav ul a:hover {
     color: #fc6;
+    border-color: #fff;
   }
 #nav ul a:active {
 	color:#F00;
+}
+#nav ul li a{
+  display: block;
+  padding: .5em;
+  border: 1px solid #ba89a8;
+  border-radius: .5em;
+  margin: .25em;
 }
 	
 /* styles for the products section */
@@ -97,14 +112,18 @@ a:active {
 #products {
   background-color: #FFF;
   line-height: 1.5em;
-  padding: 1em;
+  padding: 1em 2%;
   border: double #FFBC53;
-  margin: 1em;
+  margin: 1em 20.5em 1em 1em;
+  clear: both;
+  overflow: hidden;
+  float: left;
+  width: 55%;
   }
 #products h2 {
   font-size: 1.2em;
   color: #ac267b;
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
   }
 #products h3 {
@@ -116,7 +135,13 @@ a:active {
   padding-left: 1em;
   margin-top: 2.5em;
 }
-
+#products img{
+  float: left;
+  margin: 0 6px 6px 0;
+}
+#products .more{
+  clear:left;
+}
 /* styles for the testimonials box */
 
 #testimonials {
@@ -127,7 +152,11 @@ a:active {
   padding: 1em;
   padding-left: 55px;
   border-radius: 20px;
-  margin: 1em 10% 0 10%;
+  margin: 0 1em;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 14em;
   }
   
 #testimonials h2 {
@@ -149,11 +178,16 @@ p#copyright {
   color:#663333; 
   font-size: .8em;
   text-align: center;
+  clear: left;
   }
-
-
-	
-	
+#award{
+  position: fixed;
+  top: 35px;
+  left: 25px;
+}
+#content{
+  position: relative;
+}	
 </style>
 
 </head>
@@ -184,7 +218,7 @@ p#copyright {
   <h3>Barware</h3>
 <p><img src="images/glasses.jpg" alt="photo of glasses decorated with the letter R"></p>
 <p><em>The perfect wedding gift.</em> Our highest quality glassware is sandblasted by hand with the character of your choice. Choose from 30 characters and 24 typefaces. Custom designs are also available for an additional design charge. Allow 2 to 4 weeks for delivery. </p>
-<p><a href="#">More about custom barware...</a> </p>
+<p class="more"><a href="#">More about custom barware...</a> </p>
 
 
 <h3>Babyware</h3>
@@ -203,5 +237,8 @@ p#copyright {
 <p id="copyright">All content copyright &copy; Jennifer Robbins and Jenware, Inc. </p>
 
 </div><!-- end #content -->
+<div id="award">
+  <img src="images/awesomesite.gif" alt="awesome site of the week">
+</div>
 </body>
 </html>
