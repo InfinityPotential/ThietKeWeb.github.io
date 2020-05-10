@@ -21,9 +21,9 @@ body{
     font-style: italic;
   }
   a:link{
-    color: purple;
+    color: magenta;
   }
-  a:focus{
+  a:hover{
     color: red;
   }
   a:active{
