@@ -1,2 +1,2 @@
-# infinitypotential.github.io
+# ThietKeWeb.github.io
 Web Design Exercise
